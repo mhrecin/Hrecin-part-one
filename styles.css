@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-* {
+* 
+{
  box-sizing: border-box;
  margin: 0px;
  padding: 0;
 }
-.header {
-    background-image: url("assets/code.svg"); 
-    background-color: #fff
-    height: 500px; 
-    background-position: right;
-    background-repeat: no-repeat; 
-    background-size: cover; 
+header {
+    background-color: #fff;
+    height: 200px; 
+    font-family: "Roboto";
+   
 }
 
 .li, a, button {
@@ -23,13 +22,13 @@
     flex-direction: row;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px; 0px;
-    background-color: #F2F2F2;
+a:hover {
+    pointer: cursor;
+    color: #ff5c0f;
+}
+
+span {
+    color:#ff5c0f;
 }
 
 .Learn-to {
@@ -47,9 +46,7 @@
     background-color: #F2F2F2;
 
 }
-.parent-container-flex-start li a:hover {
-    color:#ff5c0f
-}
+
 .parent-container-flex-start {
     cursor: auto;
     display: flex;
@@ -60,16 +57,7 @@
     align-content: space-between;
     justify-content: flex-start;
     position: relative;
- 
-}
-
-.parent-container-flex-start a {
-    transition: all 0.3s ease
-    
-}
-
-parent-container-flex-start a:hover {
-    color:#ff5c0f
+    width: auto
 }
 
 child-element3:hover {
@@ -82,37 +70,37 @@ child-element3:hover {
     margin-left: 0px;
     position: absolute;
     right: 55%;
-    top:35px;
+    top:25px;
     }
 .child-element4 {
-    color: #ff5c0f
+    color: #ff5c0f;
     padding: 1px;
     margin-left: 0px;
     position: absolute;
     right: 44%;
-    top:35px;
+    top:25px;
     }
 
 .child-element5 {
-    color: #ff5c0f
+    color: #ff5c0f;
     padding: 1px;
     margin-left: 0px;
     position: absolute;
     right: 29%;
-    top:35px;
+    top:25px;
     }
 
 .child-element6 {
-    color: #ff5c0f
+    color: #ff5c0f;
     padding: 1px;
     margin-left: 0px;
     position: absolute;
     right: 15%;
-    top:35px;
+    top:25px;
     }
 
 .child-element7 {
-    color: #ff5c0f
+    color: #ff5c0f;
     padding: 1px;
     margin-left: 0px;
     position: absolute;
@@ -128,7 +116,6 @@ button {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-color: #fff;
     font-family: Roboto;
     width: auto;
 }
@@ -143,7 +130,7 @@ button:hover {
 }
 
 .image {
-    display: flex;
+    display: initial;
     align-self: right;
     width: 500px;
     height: 500px;
@@ -161,9 +148,142 @@ button:hover {
         font-size: 20px;
         }
     .parent-container-flex-start{
-        flex-direction: row;
+        flex-direction: column;
         font-size:25px;
         justify-content: space-between;
+        
+    .header {
+         justify-content: flex-start;
+         font-size:30px;
+         padding-top:10px;
+        }
+        
+    .li, a, button {
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 16px;
+            color: #000;
+            text-decoration:none;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    .Learn-to {
+            cursor: auto;
+            color: #20a8b4;
+            margin-left: 0px;
+            font-size: 22px;
+        }
+        
+    .Code {
+            cursor: auto;
+            color: #ff5c0f;
+            font-size: 22px;     
+        }
+    .parent-container-flex-start li a:hover {
+            color:#ff5c0f
+        }
+    .parent-container-flex-start {
+            cursor: auto;
+            display: flex;
+            color: #20a8b4;
+            list-style: none;
+            flex-direction: column;
+            align-content: space-between;
+            justify-content: flex-start;
+            position: relative;
+         }
+        
+    .parent-container-flex-start a {
+            transition: all 0.3s ease
+            }
+        
+    parent-container-flex-start a:hover {
+            color:#ff5c0f
+        }
+        
+    child-element3:hover {
+            background-color: #ff5c0f;
+        }
+            
+    .child-element3 {
+            color: #ff5c0f;
+            padding: 1px;
+            margin-left: 0px;
+            position: absolute;
+            right: 55%;
+            top:35px;
+            }
+    .child-element4 {
+            color: #ff5c0f
+            padding: 1px;
+            margin-left: 0px;
+            position: absolute;
+            right: 44%;
+            top:35px;
+            }
+        
+    .child-element5 {
+            color: #ff5c0f
+            padding: 1px;
+            margin-left: 0px;
+            position: absolute;
+            right: 29%;
+            top:35px;
+            }
+        
+    .child-element6 {
+            color: #ff5c0f
+            padding: 1px;
+            margin-left: 0px;
+            position: absolute;
+            right: 15%;
+            top:35px;
+            }
+        
+    .child-element7 {
+            color: #ff5c0f
+            padding: 1px;
+            margin-left: 0px;
+            position: absolute;
+            right: 10px;
+            top:25px;
+            }
+    button {
+            margin-left: 20px;
+            padding: 10px;
+            background-color:#20a8b4;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-color: #fff;
+            font-family: Roboto;
+            width: auto;
+        }
+        
+    button:hover {
+            background-color: #ff5c0f;
+        }
+        
+    .mid-page {
+            list-style:none;
+            padding: 15px;
+        }
+        
+    .image {
+            display: initial;
+            align-self: right;
+            width: 500px;
+            height: 500px;
+        }
+    .landing-page-container {
+            width: 60%;
+            min-height: 100%;
+            height: 100vh;
+           
+        }
     }
-    .
+    
 }
