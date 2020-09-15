@@ -5,19 +5,112 @@
  margin: 0px;
  padding: 0;
 }
-header {
-    background-color: #fff;
-    height: 200px; 
-    font-family: "Roboto";
-   
-}
 
+
+.parent-container-flex-start {
+    flex-direction: column;
+    font-size:25px;
+    justify-content: space-between;
+}
+.header {
+    justify-content: flex-start;
+    font-size:30px;
+    padding-top:10px;
+    font-family: "Roboto";
+}
+            
 .li, a, button {
     font-family: "Roboto";
     font-weight: bold;
     font-size: 16px;
     color: #000;
     text-decoration:none;
+    display: flex;
+    flex-direction: column;
+}
+            
+span {
+    color:#ff5c0f;
+}
+    
+.Learn-to {
+    cursor: auto;
+    color: #20a8b4;
+    margin-left: 0px;
+    font-size: 22px;
+    font-family: "Roboto";
+    background-color: #F2F2F2;
+}
+            
+.parent-container-flex-start li a:hover {
+    color:#ff5c0f
+}
+.parent-container-flex-start {
+    cursor: auto;
+    display: flex;
+    color: #20a8b4;
+    list-style: none;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    position: relative;
+}
+            
+                
+button {
+    margin-left: 20px;
+    padding: 10px;
+    background-color:#20a8b4;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-color: #fff;
+    font-family: Roboto;
+    width: 100%;
+}
+            
+button:hover {
+    background-color: #ff5c0f;
+}
+  
+a:hover {
+    pointer: cursor;
+    color: #ff5c0f;
+}
+.mid-page {
+    list-style:none;
+    padding: 15px;
+}
+img {
+    display: none;
+}          
+
+/* main page */
+@media screen and (min-width:768px) {
+
+header {
+    background-color: #fff;
+    height: 200px; 
+    font-family: "Roboto";
+}
+
+.parent-container-row {
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    align-content: right;
+    list-style: none;
+}
+
+.li, a, button {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
 }
@@ -39,74 +132,6 @@ span {
     background-color: #F2F2F2;
 }
 
-.Code {
-    cursor: auto;
-    color: #ff5c0f;
-    font-size: 22px;
-    background-color: #F2F2F2;
-
-}
-
-.parent-container-flex-start {
-    cursor: auto;
-    display: flex;
-    color: #20a8b4;
-    background-color: #F2F2F2;
-    list-style: none;
-    flex-direction: row;
-    align-content: space-between;
-    justify-content: flex-start;
-    position: relative;
-    width: auto
-}
-
-child-element3:hover {
-    background-color: #ff5c0f;
-}
-    
-.child-element3 {
-    color: #ff5c0f;
-    padding: 1px;
-    margin-left: 0px;
-    position: absolute;
-    right: 55%;
-    top:25px;
-    }
-.child-element4 {
-    color: #ff5c0f;
-    padding: 1px;
-    margin-left: 0px;
-    position: absolute;
-    right: 44%;
-    top:25px;
-    }
-
-.child-element5 {
-    color: #ff5c0f;
-    padding: 1px;
-    margin-left: 0px;
-    position: absolute;
-    right: 29%;
-    top:25px;
-    }
-
-.child-element6 {
-    color: #ff5c0f;
-    padding: 1px;
-    margin-left: 0px;
-    position: absolute;
-    right: 15%;
-    top:25px;
-    }
-
-.child-element7 {
-    color: #ff5c0f;
-    padding: 1px;
-    margin-left: 0px;
-    position: absolute;
-    right: 10px;
-    top:25px;
-    }
 button {
     margin-left: 20px;
     padding: 10px;
@@ -119,171 +144,24 @@ button {
     font-family: Roboto;
     width: auto;
 }
-
 button:hover {
     background-color: #ff5c0f;
 }
 
-.mid-page {
-    list-style:none;
-    padding: 15px;
+.parent-container-flex-end {
+    flex-direction: row;
+    justify-content: flex-end;
+    display: flex;
+    align-content: right;
+    list-style: none;
 }
 
-.image {
-    display: initial;
-    align-self: right;
-    width: 500px;
+img {
+    display: flex;
+    align: right;
     height: 500px;
+    width: 500px;
 }
-.landing-page-container {
-    width: 60%;
-    min-height: 100%;
-    height: 100vh;
-   
 }
 
-@media screen and (min-width:768px){
-    body{
-        display:initial;
-        font-size: 20px;
-        }
-    .parent-container-flex-start{
-        flex-direction: column;
-        font-size:25px;
-        justify-content: space-between;
-        
-    .header {
-         justify-content: flex-start;
-         font-size:30px;
-         padding-top:10px;
-        }
-        
-    .li, a, button {
-            font-family: "Roboto";
-            font-weight: bold;
-            font-size: 16px;
-            color: #000;
-            text-decoration:none;
-            display: flex;
-            flex-direction: column;
-        }
-        
-    .Learn-to {
-            cursor: auto;
-            color: #20a8b4;
-            margin-left: 0px;
-            font-size: 22px;
-        }
-        
-    .Code {
-            cursor: auto;
-            color: #ff5c0f;
-            font-size: 22px;     
-        }
-    .parent-container-flex-start li a:hover {
-            color:#ff5c0f
-        }
-    .parent-container-flex-start {
-            cursor: auto;
-            display: flex;
-            color: #20a8b4;
-            list-style: none;
-            flex-direction: column;
-            align-content: space-between;
-            justify-content: flex-start;
-            position: relative;
-         }
-        
-    .parent-container-flex-start a {
-            transition: all 0.3s ease
-            }
-        
-    parent-container-flex-start a:hover {
-            color:#ff5c0f
-        }
-        
-    child-element3:hover {
-            background-color: #ff5c0f;
-        }
-            
-    .child-element3 {
-            color: #ff5c0f;
-            padding: 1px;
-            margin-left: 0px;
-            position: absolute;
-            right: 55%;
-            top:35px;
-            }
-    .child-element4 {
-            color: #ff5c0f
-            padding: 1px;
-            margin-left: 0px;
-            position: absolute;
-            right: 44%;
-            top:35px;
-            }
-        
-    .child-element5 {
-            color: #ff5c0f
-            padding: 1px;
-            margin-left: 0px;
-            position: absolute;
-            right: 29%;
-            top:35px;
-            }
-        
-    .child-element6 {
-            color: #ff5c0f
-            padding: 1px;
-            margin-left: 0px;
-            position: absolute;
-            right: 15%;
-            top:35px;
-            }
-        
-    .child-element7 {
-            color: #ff5c0f
-            padding: 1px;
-            margin-left: 0px;
-            position: absolute;
-            right: 10px;
-            top:25px;
-            }
-    button {
-            margin-left: 20px;
-            padding: 10px;
-            background-color:#20a8b4;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-color: #fff;
-            font-family: Roboto;
-            width: auto;
-        }
-        
-    button:hover {
-            background-color: #ff5c0f;
-        }
-        
-    .mid-page {
-            list-style:none;
-            padding: 15px;
-        }
-        
-    .image {
-            display: initial;
-            align-self: right;
-            width: 500px;
-            height: 500px;
-        }
-    .landing-page-container {
-            width: 60%;
-            min-height: 100%;
-            height: 100vh;
-           
-        }
-    }
     
-}
